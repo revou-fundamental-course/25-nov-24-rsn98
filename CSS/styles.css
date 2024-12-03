@@ -107,11 +107,24 @@ footer {
 
 /* Styling for clickable workout links */
 #workout-link a {
-    color: #00ffcc; /* Bright cyan color for the links */
+    color: #401ddb;
     text-decoration: none; /* Remove underline by default */
 }
 
 /* Add underline effect on hover for links */
 #workout-link a:hover {
     text-decoration: underline; /* Underline the link on hover */
+    color: #270180;
+}
+
+/* Styling for dietary link */
+#dietary-link a {
+    color: #401ddb;
+    text-decoration: none; /* Remove underline by default */
+}
+
+/* Add underline effect on hover for dietary link */
+#dietary-link a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+    color: #270180;
 }
