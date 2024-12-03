@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Basic meta information about the webpage -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+    <title>BMI Calculator</title> <!-- The title of the webpage that appears on the browser tab -->
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Link to the external CSS file for styling -->
 </head>
 <body>
+    <!-- Main container for the content -->
     <div class="container">
+        <!-- Page title -->
         <h2>BMI Calculator</h2>
+        <!-- Description about BMI and its importance -->
         <p>The ideal body weight is everyone's dream. Not only having a body shape that supports appearance, ideal body weight also indicates a healthy body condition. How about you? Come on, calculate now on the BMI calculator.</p>
         
+        <!-- Form to collect user inputs for BMI calculation -->
         <form id="bmi-form">
-            <!-- Gender and Age inputs side by side -->
+            <!-- Gender and Age inputs arranged side by side -->
             <div class="input-group">
+                <!-- Dropdown for gender selection -->
                 <div class="input-item">
-                    <label for="gender">Gender</label>
-                    <select id="gender" required>
-                        <option value="" disabled selected>Select your gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
+                    <label for="gender">Gender</label> <!-- Label for the gender dropdown -->
+                    <select id="gender" required> <!-- Dropdown menu for selecting gender -->
+                        <option value="" disabled selected>Select your gender</option> <!-- Placeholder option -->
+                        <option value="male">Male</option> <!-- Male option -->
+                        <option value="female">Female</option> <!-- Female option -->
                     </select>
                 </div>
+                <!-- Input for age -->
                 <div class="input-item">
-                    <label for="age">Age (years)</label>
-                    <input type="number" id="age" placeholder="Enter your age" required>
+                    <label for="age">Age (years)</label> <!-- Label for the age input -->
+                    <input type="number" id="age" placeholder="Enter your age" required> <!-- Number input for age -->
                 </div>
             </div>
 
-            <!-- Weight and Height inputs side by side -->
+            <!-- Weight and Height inputs arranged side by side -->
             <div class="input-group">
+                <!-- Input for weight -->
                 <div class="input-item">
-                    <label for="weight">Weight (kg)</label>
-                    <input type="number" id="weight" placeholder="Enter your weight" required>
+                    <label for="weight">Weight (kg)</label> <!-- Label for the weight input -->
+                    <input type="number" id="weight" placeholder="Enter your weight" required> <!-- Number input for weight -->
                 </div>
+                <!-- Input for height -->
                 <div class="input-item">
-                    <label for="height">Height (cm)</label>
-                    <input type="number" id="height" placeholder="Enter your height" required>
+                    <label for="height">Height (cm)</label> <!-- Label for the height input -->
+                    <input type="number" id="height" placeholder="Enter your height" required> <!-- Number input for height -->
                 </div>
             </div>
 
-            <!-- Buttons for actions -->
-            <button type="button" id="calculate-btn">Calculate BMI</button>
-            <button type="reset">Reset</button>
+            <!-- Buttons for form actions -->
+            <button type="button" id="calculate-btn">Calculate BMI</button> <!-- Button to calculate BMI -->
+            <button type="reset">Reset</button> <!-- Button to reset the form fields -->
         </form>
 
+        <!-- Section to display BMI results -->
         <div id="result-section" class="hidden">
-            <h3>Your BMI Result</h3>
-            <p id="bmi-value"></p>
-            <p id="bmi-category"></p>
-            <h4>Recommended Plans</h4>
-            <p id="workout-plan"></p>
-            <p id="workout-link"></p>
-            <h4 id="dietary-plan"></h4>
-            <p id="dietary-link"></p>
+            <h3>Your BMI Result</h3> <!-- Header for result section -->
+            <p id="bmi-value"></p> <!-- Placeholder to display the calculated BMI value -->
+            <p id="bmi-category"></p> <!-- Placeholder to display the BMI category -->
+            <h4>Recommended Plans</h4> <!-- Header for the recommendations section -->
+            <p id="workout-plan"></p> <!-- Placeholder to display the workout plan description -->
+            <p id="workout-link"></p> <!-- Placeholder to display the workout plan link -->
+            <h4 id="dietary-plan"></h4> <!-- Placeholder to display the dietary plan description -->
+            <p id="dietary-link"></p> <!-- Placeholder to display the dietary plan link -->
+            <!-- Disclaimer about BMI and its limitations -->
             <small>BMI does not fully represent a comprehensive diagnosis of body health. You need further consultation to assess risks and health conditions related to your body weight.</small>
         </div>
     </div>
 
-    <!-- Footer with credit text -->
+    <!-- Footer with credit to the creator -->
     <footer>
-        <p>Made by Ronaldo Surya Noto</p>
+        <p>Made by Ronaldo Surya Noto</p> <!-- Display the creator's name -->
     </footer>
 
+    <!-- Link to the external JavaScript file for functionality -->
     <script src="js/script.js"></script>
 </body>
 </html>
