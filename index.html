@@ -1,93 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS\styles.css">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
-
 <body>
-     <!-- Judul Website -->
-     <header class="main-header">
-        <h1>Kalkulator BMI</h1>
-     </header>
-
-     <!-- Konten Website -->
-     <main>
-        <!-- Section Form Kalkulator BMI -->
-        <section class="main-section">
-            <!-- Main Article -->
-            <article>
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
-            </article>
-
-            <!-- Main Form -->
-            <form>
-                <div class="form-item">
-                    <label for="berat-badan-input">
-                        Berat Badan (kg) :
-                    </label>
-                    <input type="number" id="berat-badan-input" />
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <p>The ideal body weight is everyone's dream. Not only having a body shape that supports appearance, ideal body weight also indicates a healthy body condition. How about you? Come on, calculate now on the BMI calculator.</p>
+        
+        <form id="bmi-form">
+            <!-- Gender and Age inputs side by side -->
+            <div class="input-group">
+                <div class="input-item">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
                 </div>
-
-                <div class="form-item">
-                    <label for="usia-input">
-                        Usia (Tahun) :
-                    </label>
-                    <input type="number" id="usia-input" />
+                <div class="input-item">
+                    <label for="age">Age (years)</label>
+                    <input type="number" id="age" placeholder="Enter your age" required>
                 </div>
-
-                <div class="form-item">
-                    <label for="tinggi-badan-input">
-                        Tinggi Badan (cm) :
-                    </label>
-                    <input type="number" id="tinggi-badan-input" />
-                </div>
-
-                <div class="form-button-container">
-                    <button class="bg-cadet-blue color-antique-white">Hitung BMI</button>
-                    <button class="bg-alice-blue">Reset</button>
-                </div>
-            </form>
-
-            <!-- Second Article -->
-            <article>
-                <header>
-                    <h3>Keunggulan Fitur</h3>
-                </header>
-
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
-            </article>
-        </section>
-
-        <!-- Section Hasil Kalkulasi -->
-        <section class="main-section">
-            <div>
-                <header>
-                    <h2>Hasil</h2>
-                </header>
-
-                <p>Berat Badan Lebih</p>
-                
-                <div id="result-calculation">0</div>
-
-                <p id="info-result">Anda memiliki berat badan berlebih</p>
             </div>
 
-            <!-- Third Article -->
-            <article>
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
-            </article>
-        </section>
+            <!-- Weight and Height inputs side by side -->
+            <div class="input-group">
+                <div class="input-item">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="Enter your weight" required>
+                </div>
+                <div class="input-item">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="Enter your height" required>
+                </div>
+            </div>
 
-     </main>
+            <!-- Buttons for actions -->
+            <button type="button" id="calculate-btn">Calculate BMI</button>
+            <button type="reset">Reset</button>
+        </form>
 
-     <!-- Footer Website -->
-     <footer>
-        <p>Made by RSN98</p>
-     </footer>
+        <div id="result-section" class="hidden">
+            <h3>Your BMI Result</h3>
+            <p id="bmi-value"></p>
+            <p id="bmi-category"></p>
+            <h4>Recommended Plans</h4>
+            <p id="workout-plan"></p>
+            <p id="workout-link"></p>
+            <h4 id="dietary-plan"></h4>
+            <p id="dietary-link"></p>
+            <small>BMI does not fully represent a comprehensive diagnosis of body health. You need further consultation to assess risks and health conditions related to your body weight.</small>
+        </div>
+    </div>
+
+    <!-- Footer with credit text -->
+    <footer>
+        <p>Made by Ronaldo Surya Noto</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>

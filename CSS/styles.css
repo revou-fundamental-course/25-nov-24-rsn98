@@ -1,62 +1,111 @@
-/* ini file CSS */
-
-.main-header {
-    text-align: center;
+/* Body background */
+body {
+    font-family: "Brush Script MT", cursive;
+    margin: 0;
+    padding: 0;
+    background: url('https://i.pinimg.com/736x/1c/25/82/1c258226863d45fef4fc606a77522ec2.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    color: #ffffff;
 }
 
-main {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.main-section {
-    width: 40%;
-}
-
-footer {
-    text-align: center;
-}
-
-form {
-    background-color: antiquewhite;
-    padding: 16px;
+/* Main container with a transparent background */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.form-item {
+/* Heading styles */
+h2, h3, h4 {
+    text-align: center;
+    color: #00ffff;
+}
+
+/* Paragraph text */
+p {
+    color: #eeeeee;
+    line-height: 1.5;
+}
+
+/* Flexbox for arranging input fields side by side */
+.input-group {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 15px;
 }
 
-input[type=number] {
-    width: 40%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
+.input-item {
+    width: 48%; /* Each input takes 48% of the container width */
+}
+
+/* Input and dropdown styling */
+input[type="number"], select {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    font-size: 14px;
 }
 
-.form-button-container {
-    margin-top: 32px;
-}
-
+/* Buttons styling */
 button {
-    border: 0;
-    padding: 8px;
-    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-.bg-cadet-blue {
-    background-color: cadetblue;
+button:hover {
+    background: #0056b3;
 }
 
-.bg-alice-blue {
-    background-color: aliceblue;
+/* Hidden result section */
+.hidden {
+    display: none;
 }
 
-.color-antique-white {
-    color: antiquewhite;
+#result-section {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#bmi-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+#bmi-category {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #eeeeee;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Styling for workout link */
+#workout-link a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+#workout-link a:hover {
+    text-decoration: underline;
 }
