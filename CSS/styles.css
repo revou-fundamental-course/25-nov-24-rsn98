@@ -1,6 +1,6 @@
 /* Body background styling */
 body {
-    font-family: "Sour Gummy", cursive; /* Use a cursive font for an elegant style */
+    font-family: "Sour Gummy"; /* Use a cursive font for an elegant style */
     margin: 0; /* Remove default browser margins */
     padding: 0; /* Remove default browser padding */
     background: url('https://i.pinimg.com/736x/1c/25/82/1c258226863d45fef4fc606a77522ec2.jpg') no-repeat center center fixed; /* Set a centered, fixed background image */
@@ -16,21 +16,21 @@ body {
     padding: 20px; /* Add inner spacing around the content */
     border-radius: 8px; /* Round the corners for a smooth look */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
-    font-family: "Sour Gummy", cursive; 
+    font-family: "Sour Gummy"; 
 }
 
 /* Heading styles (h2, h3, h4) */
 h2, h3, h4 {
     text-align: center; /* Center align the text */
     color: #00ffff; /* Use a bright cyan color for headings */
-    font-family: "Sour Gummy", cursive;
+    font-family: "Sour Gummy";
 }
 
 /* Paragraph text styling */
 p {
     color: #eeeeee; /* Light gray text color for readability */
     line-height: 1.5; /* Increase line spacing for better readability */
-    font-family: "Sour Gummy", cursive;
+    font-family: "Sour Gummy";
 }
 
 /* Flexbox container for arranging input fields side by side */
