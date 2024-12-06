@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Specifies the character encoding for the document -->
     <meta charset="UTF-8">
+    <!-- Ensures the page is properly scaled and responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
+    <!-- Links to an external CSS stylesheet for custom styling -->
     <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Imports a custom font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
+        <!-- Header section for the BMI Calculator -->
         <h2>BMI Calculator</h2>
         <p>The ideal body weight is everyone's dream. Calculate your BMI to find out where you stand.</p>
 
+        <!-- Form for collecting user inputs to calculate BMI -->
         <form id="bmi-form">
-            <!-- Side-by-side layout -->
+            <!-- Container for grouping form inputs in a side-by-side layout -->
             <div class="form-container">
-                <!-- Gender and Age -->
+                <!-- Section for personal information inputs -->
                 <fieldset>
                     <legend>Personal Information</legend>
+                    <!-- Dropdown for selecting gender -->
                     <label for="gender">Gender:</label>
                     <select id="gender" required>
                         <option value="" disabled selected>Select your gender</option>
@@ -25,44 +32,56 @@
                         <option value="female">Female</option>
                     </select>
 
+                    <!-- Input for entering age -->
                     <label for="age">Age (years):</label>
                     <input type="number" id="age" placeholder="Enter your age" required>
                 </fieldset>
 
-                <!-- Weight and Height -->
+                <!-- Section for body measurement inputs -->
                 <fieldset>
                     <legend>Body Measurements</legend>
+                    <!-- Input for entering weight -->
                     <label for="weight">Weight (kg):</label>
                     <input type="number" id="weight" placeholder="Enter your weight" required>
 
+                    <!-- Input for entering height -->
                     <label for="height">Height (cm):</label>
                     <input type="number" id="height" placeholder="Enter your height" required>
                 </fieldset>
             </div>
 
-            <!-- Buttons -->
+            <!-- Buttons for submitting and resetting the form -->
             <button type="button" id="calculate-btn">Calculate BMI</button>
             <button type="reset" id="reset-btn">Reset</button>
         </form>
 
-        <!-- Results Section -->
+        <!-- Section for displaying BMI calculation results -->
         <section id="result-section" class="hidden">
             <h3>Your BMI Result</h3>
+            <!-- Paragraph to display the calculated BMI value -->
             <p id="bmi-value"></p>
+            <!-- Paragraph to display the BMI category (e.g., Underweight, Normal, Overweight) -->
             <p id="bmi-category"></p>
             <h4>Recommended Plans</h4>
+            <!-- Paragraph to display a suggested workout plan -->
             <p id="workout-plan"></p>
+            <!-- Paragraph to provide a link or information for workout guidance -->
             <p id="workout-link"></p>
+            <!-- Heading for dietary recommendations -->
             <h4 id="dietary-plan"></h4>
+            <!-- Paragraph to provide a link or information for dietary guidance -->
             <p id="dietary-link"></p>
+            <!-- Disclaimer for users about BMI limitations -->
             <small>BMI does not fully represent a comprehensive diagnosis of body health. Consult a doctor for personalized advice.</small>
         </section>
     </main>
 
+    <!-- Footer section with creator's information -->
     <footer>
         <p>Made by Ronaldo Surya Noto</p>
     </footer>
 
+    <!-- Links to the external JavaScript file containing logic for BMI calculations -->
     <script src="js/script.js"></script>
 </body>
 </html>

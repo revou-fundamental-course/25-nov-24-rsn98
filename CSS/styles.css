@@ -1,110 +1,163 @@
 /* Body background styling */
 body {
+    /* Set the font for the entire page */
     font-family: "Sour Gummy";
+    /* Remove default margins and paddings */
     margin: 0;
     padding: 0;
+    /* Apply a fixed background image with a centered layout */
     background: url('https://i.pinimg.com/736x/1c/25/82/1c258226863d45fef4fc606a77522ec2.jpg') no-repeat center center fixed;
+    /* Ensure the background image covers the entire screen */
     background-size: cover;
+    /* Set the default text color to white for better contrast */
     color: #ffffff;
 }
 
 /* Main content container */
 main {
+    /* Limit the width of the main content area for better readability */
     max-width: 600px;
+    /* Center the main content vertically and horizontally with auto margins */
     margin: 20px auto;
+    /* Apply a semi-transparent dark background for readability */
     background: rgba(0, 0, 0, 0.8);
+    /* Add padding inside the container */
     padding: 20px;
+    /* Round the corners for a softer look */
     border-radius: 8px;
+    /* Add a subtle shadow for depth */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Heading styles */
 h2, h3, h4 {
+    /* Center-align all headings */
     text-align: center;
+    /* Use a cyan color for headings to make them stand out */
     color: #00ffff;
 }
 
 /* Paragraph styling */
 p {
+    /* Use a light gray color for paragraph text */
     color: #eeeeee;
+    /* Set a comfortable line height for readability */
     line-height: 1.5;
 }
 
 /* Fieldset styling */
 fieldset {
+    /* Add a border around fieldsets for better grouping */
     border: 1px solid #ccc;
+    /* Round the edges of the fieldset */
     border-radius: 8px;
+    /* Add padding inside the fieldset for spacing */
     padding: 10px;
 }
 
 /* Legend styling */
 legend {
+    /* Set the legend text color to cyan */
     color: #00ffff;
+    /* Make the legend text bold */
     font-weight: bold;
 }
 
 /* Input and select styling */
 input[type="number"], select {
+    /* Make inputs and select elements take the full width minus padding */
     width: calc(100% - 20px);
+    /* Add padding for better usability */
     padding: 8px;
+    /* Add spacing between inputs */
     margin: 10px 0;
+    /* Add a border around inputs */
     border: 1px solid #ccc;
+    /* Round the edges of the inputs */
     border-radius: 4px;
 }
 
 /* Button styling */
 button {
+    /* Make buttons stretch across the container */
     width: 100%;
+    /* Add padding for better clickability */
     padding: 10px;
+    /* Use a blue background for buttons */
     background: #007bff;
+    /* Set button text color to white for contrast */
     color: #ffffff;
+    /* Remove default borders */
     border: none;
+    /* Round the edges of the buttons */
     border-radius: 8px;
+    /* Change the cursor to indicate clickability */
     cursor: pointer;
+    /* Add a margin to separate buttons from other elements */
     margin-top: 10px;
 }
 
+/* Button hover effect */
 button:hover {
+    /* Darken the button background on hover */
     background: #0056b3;
 }
 
 /* Side-by-side layout for form container */
 .form-container {
+    /* Use flexbox to align fieldsets side-by-side */
     display: flex;
+    /* Add space between fieldsets */
     justify-content: space-between;
+    /* Add a gap for spacing between fieldsets */
     gap: 15px;
 }
 
+/* Ensure fieldsets inside the form container are equal width */
 .form-container fieldset {
     flex: 1;
 }
 
 /* Hidden results section */
 .hidden {
+    /* Completely hide elements with this class */
     display: none;
 }
 
 /* Results section styling */
 #result-section {
+    /* Add spacing above the results section */
     margin-top: 20px;
+    /* Use a semi-transparent white background for emphasis */
     background: rgba(255, 255, 255, 0.1);
+    /* Add padding inside the section */
     padding: 15px;
+    /* Round the corners of the section */
     border-radius: 8px;
+    /* Center-align the text inside the section */
     text-align: center;
 }
 
 /* Highlight BMI value */
 #bmi-value {
+    /* Increase font size for emphasis */
     font-size: 24px;
+    /* Make the text bold */
     font-weight: bold;
+    /* Use a teal color for the BMI value */
     color: #00ffcc;
 }
 
 /* Footer styling */
 footer {
+    /* Center-align footer text */
     text-align: center;
+    /* Add spacing above the footer */
     margin-top: 20px;
+    /* Use a light gray color for the text */
     color: #eeeeee;
+    /* Set a smaller font size for the footer */
     font-size: 14px;
+    /* Add an italic style for emphasis */
     font-style: italic;
 }
