@@ -1,133 +1,110 @@
 /* Body background styling */
 body {
-    font-family: "Sour Gummy"; /* Use a cursive font for an elegant style */
-    margin: 0; /* Remove default browser margins */
-    padding: 0; /* Remove default browser padding */
-    background: url('https://i.pinimg.com/736x/1c/25/82/1c258226863d45fef4fc606a77522ec2.jpg') no-repeat center center fixed; /* Set a centered, fixed background image */
-    background-size: cover; /* Ensure the background image fully covers the viewport */
-    color: #ffffff; /* Set the text color to white for better contrast */
+    font-family: "Sour Gummy";
+    margin: 0;
+    padding: 0;
+    background: url('https://i.pinimg.com/736x/1c/25/82/1c258226863d45fef4fc606a77522ec2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
 }
 
-/* Main container for the content with a transparent background */
-.container {
-    max-width: 600px; /* Limit the width of the container */
-    margin: 20px auto; /* Center the container with auto margins */
-    background: rgba(0, 0, 0, 0.8); /* Set a semi-transparent black background */
-    padding: 20px; /* Add inner spacing around the content */
-    border-radius: 8px; /* Round the corners for a smooth look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
-    font-family: "Sour Gummy"; 
+/* Main content container */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Heading styles (h2, h3, h4) */
+/* Heading styles */
 h2, h3, h4 {
-    text-align: center; /* Center align the text */
-    color: #00ffff; /* Use a bright cyan color for headings */
-    font-family: "Sour Gummy";
+    text-align: center;
+    color: #00ffff;
 }
 
-/* Paragraph text styling */
+/* Paragraph styling */
 p {
-    color: #eeeeee; /* Light gray text color for readability */
-    line-height: 1.5; /* Increase line spacing for better readability */
-    font-family: "Sour Gummy";
+    color: #eeeeee;
+    line-height: 1.5;
 }
 
-/* Flexbox container for arranging input fields side by side */
-.input-group {
-    display: flex; /* Use flexbox to align elements horizontally */
-    justify-content: space-between; /* Add space between the input fields */
-    margin-bottom: 15px; /* Add spacing below each input group */
+/* Fieldset styling */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
 }
 
-/* Individual input field container */
-.input-item {
-    width: 48%; /* Each input takes approximately half the container's width */
+/* Legend styling */
+legend {
+    color: #00ffff;
+    font-weight: bold;
 }
 
-/* Styling for input fields and dropdown menus */
+/* Input and select styling */
 input[type="number"], select {
-    width: 90%; /* Input fields take up 90% of their parent container */
-    padding: 8px; /* Add padding inside the input fields */
-    margin-top: 5px; /* Add spacing above input fields */
-    border: 1px solid #ccc; /* Light gray border for a clean look */
-    border-radius: 4px; /* Slightly rounded corners for smooth design */
-    font-size: 14px; /* Standard font size for text inputs */
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-/* Styling for buttons */
+/* Button styling */
 button {
-    width: 100%; /* Buttons take up the full width of their container */
-    padding: 10px; /* Add inner spacing to buttons */
-    background: #007bff; /* Blue background color for buttons */
-    color: #ffffff; /* White text color for contrast */
-    border: none; /* Remove default borders */
-    cursor: pointer; /* Show a pointer cursor on hover */
-    margin-top: 10px; /* Add spacing above buttons */
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-/* Change button color on hover */
 button:hover {
-    background: #0056b3; /* Darker blue shade for hover effect */
+    background: #0056b3;
 }
 
-/* Hide the result section by default */
+/* Side-by-side layout for form container */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.form-container fieldset {
+    flex: 1;
+}
+
+/* Hidden results section */
 .hidden {
-    display: none; /* Hide elements with this class */
+    display: none;
 }
 
-/* Styling for the visible result section */
+/* Results section styling */
 #result-section {
-    margin-top: 20px; /* Add spacing above the result section */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for contrast */
-    padding: 15px; /* Add inner spacing */
-    border-radius: 8px; /* Smooth corners */
-    text-align: center; /* Center align the text */
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 /* Highlight BMI value */
 #bmi-value {
-    font-size: 24px; /* Make the BMI value prominent */
-    font-weight: bold; /* Use bold font for emphasis */
-    color: #00ffcc; /* Bright cyan color for visibility */
-}
-
-/* Styling for BMI category text */
-#bmi-category {
-    margin-top: 10px; /* Add spacing above the category */
-    font-weight: bold; /* Make the category text bold */
-    color: #eeeeee; /* Light gray text for contrast */
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffcc;
 }
 
 /* Footer styling */
 footer {
-    text-align: center; /* Center align the footer text */
-    margin-top: 20px; /* Add spacing above the footer */
-    color: #eeeeee; /* Light gray text color */
-    font-size: 14px; /* Small font size for footer text */
-    font-style: italic; /* Italicize the footer text */
-}
-
-/* Styling for clickable workout links */
-#workout-link a {
-    color: #401ddb;
-    text-decoration: none; /* Remove underline by default */
-}
-
-/* Add underline effect on hover for links */
-#workout-link a:hover {
-    text-decoration: underline; /* Underline the link on hover */
-    color: #270180;
-}
-
-/* Styling for dietary link */
-#dietary-link a {
-    color: #401ddb;
-    text-decoration: none; /* Remove underline by default */
-}
-
-/* Add underline effect on hover for dietary link */
-#dietary-link a:hover {
-    text-decoration: underline; /* Underline the link on hover */
-    color: #270180;
+    text-align: center;
+    margin-top: 20px;
+    color: #eeeeee;
+    font-size: 14px;
+    font-style: italic;
 }
